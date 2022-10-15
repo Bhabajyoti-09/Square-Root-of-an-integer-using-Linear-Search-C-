@@ -1,0 +1,25 @@
+/*
+
+	Time complexity: O(A)
+	Space complexity: O(1)
+	
+	where A is given in each test case.
+
+*/
+
+int squareRoot(int a)
+{
+	// Initialize a variable to store result.
+	int ans = 0;
+    
+    // Check all integers from 0 to a.
+	for(int i = 0; i <= a; i++)
+	{
+		if(i * i <= a)
+		{
+			ans = max(ans, i);
+		}
+	}	
+
+	return ans;
+}
